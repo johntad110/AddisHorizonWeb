@@ -14,9 +14,9 @@ ______________________________________________________________________
 - Integrates with external libraries, APIs, and services to enhance functionality and data integration.
 - Implements state management using Vuex for efficient data flow and synchronization.
 - Follows best practices for code organization, documentation, and version control using Git.
-
 ______________________________________________________________________
-
+Contributions and collaboration are welcome! Feel free to fork the repository, make improvements, and submit Pull Requests to help enhance the Addis Horizon website.
+______________________________________________________________________
 ## Project Setup:
 
 To set up the project, follow these steps:
@@ -52,6 +52,4 @@ This will start a local development server and provide you with a development UR
 
 For more advanced configuration options and customization, refer to the [Configuration Reference](https://cli.vuejs.org/config/).
 
-______________________________________________________________________
-Contributions and collaboration are welcome! Feel free to fork the repository, make improvements, and submit Pull Requests to help enhance the Addis Horizon website.
 ______________________________________________________________________
