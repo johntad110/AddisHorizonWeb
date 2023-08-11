@@ -50,9 +50,7 @@ npm run serve
 
 This will start a local development server and provide you with a development URL where you can view and test the website.
 
-## Customize Configuration:
-
-For more advanced configuration options and customization, refer to the [Configuration Reference](https://cli.vuejs.org/config/). It provides detailed information about various Vue CLI configuration options that can be modified to suit your specific needs.
+For more advanced configuration options and customization, refer to the [Configuration Reference](https://cli.vuejs.org/config/).
 
 ______________________________________________________________________
 Contributions and collaboration are welcome! Feel free to fork the repository, make improvements, and submit Pull Requests to help enhance the Addis Horizon website.
