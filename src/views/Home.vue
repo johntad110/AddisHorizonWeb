@@ -35,33 +35,6 @@
     <button class="visit-button">Visit us</button>
   </div>
 
-  <div class="bottom">
-    <div class="bottom-left">
-      <div class="bottom-left-top">
-        <h1 class="name">Addis Horizon Realty Group</h1>
-        <h6>Our property, your property.</h6>
-      </div>
-      <div class="bottom-left-bottom"></div>
-    </div>
-    <div class="bottom-right">
-      <h3>Company</h3>
-      <p><a href="#">About</a></p>
-      <p><a href="#">News</a></p>
-      <p><a href="#">Privacy</a></p>
-      <p><a href="#">Properties</a></p>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <div class="social-media">
-      <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-    </div>
-    <div class="copy-right">
-      &copy; 2023 Addis Horizen Realty Group. All rights reserved.
-    </div>
-  </footer>
 </template>
 
 <script>
@@ -198,66 +171,5 @@ Hero {
   color: rgb(0, 157, 97);
   background: wheat;
   box-shadow: 0 0 10px 0 rgb(0, 157, 97);
-}
-
-/* Bottom part not footer */
-.bottom {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;
-  margin-top: 50px;
-}
-
-.bottom-left-top {
-  text-align: start;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.bottom-right {
-  padding: 10px;
-  margin-right: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.bottom-right h3 {
-  padding-bottom: 10px;
-}
-
-.bottom-right a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Borel';
-}
-
-.bottom-right a:hover {
-  color: rgb(0, 157, 97);
-}
-
-/* footer styling */
-.footer {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-
-.social-media .social-link {
-  color: rgb(0, 157, 97);
-  margin-right: 10px;
-  font-size: 18px;
-}
-
-.social-media .social-link:hover {
-  color: black;
-}
-
-.copy-right {
-  color: rgb(52, 92, 56);
 }
 </style>
