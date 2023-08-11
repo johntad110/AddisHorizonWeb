@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Luxury Villa",
+        "location": "Los Angeles",
+        "price": 1500000,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "description": "Beautiful Luxury villa in the heart of Los Angeles.",
+        "image": ["homes/house1.jpg", "homes/house3.jpg", "homes/house3.jpg"] 
+    },
+    {
+        "id": 2,
+        "name": "Beachfront Condo",
+        "location": "Miami",
+        "price": 1000000,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "description": "Stunning beachfront condo with breathtaking ocean views.",
+        "image": ["homes/house1.jpg", "homes/house3.jpg", "homes/house3.jpg"]
+    },
+    {
+        "id": 3,
+        "name": "Cozy Cottage",
+        "location": "New Yorm",
+        "price": 500000,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "description": "Charming cottage located in a peaceful area of New York.",
+        "image": ["homes/house1.jpg", "homes/house3.jpg", "homes/house3.jpg"]
+    }
+]

@@ -1,9 +1,7 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <!-- header -->
+  <router-view />
+  <!-- footer -->
 </template>
 
 <style>
@@ -15,16 +13,32 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+body,
+body::before,
+body::after {
+  font-family: 'Nova Round', cursive;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.name {
+  font-family: "Borel", cursive;
+}
+
+/* font-family: 'Borel', cursive;
+font-family: 'Nova Round', cursive;
+font-family: 'Signika', sans-serif; */
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: wheat;
 }
 </style>
