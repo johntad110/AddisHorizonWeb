@@ -24,7 +24,7 @@ To set up the project, follow these steps:
 1. Clone the repository:
 
    ```shell
-   [git clone https://github.com/your-username/addis-horizon.git](https://github.com/johntad110/AddisHorizonWeb.git)
+   git clone https://github.com/johntad110/AddisHorizonWeb.git
    ```
 
 
