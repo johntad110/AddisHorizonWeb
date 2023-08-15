@@ -3,30 +3,113 @@
         "id": 1,
         "name": "Luxury Villa",
         "location": "Los Angeles",
-        "price": 1500000,
-        "bedrooms": 4,
-        "bathrooms": 3,
-        "description": "Beautiful Luxury villa in the heart of Los Angeles.",
-        "image": ["homes/house1.jpg", "homes/house3.jpg", "homes/house3.jpg"] 
+        "price": 3500000,
+        "bedrooms": 6,
+        "bathrooms": 8,
+        "description": "Immerse yourself in the lap of luxury with this stunning villa in the heart of Los Angeles. This magnificent property boasts spacious living areas, high-end finishes, and breathtaking city views. With its state-of-the-art amenities, beautifully landscaped gardens, and a private pool, this villa offers the epitome of opulent living.",
+        "image": [
+            "homes/villa1.webp",
+            "homes/villa2.webp",
+            "homes/villa3.webp",
+            "homes/villa4.webp",
+            "homes/villa5.webp",
+            "homes/villa6.webp",
+            "homes/villa7.webp",
+            "homes/villa8.webp",
+            "homes/villa9.webp",
+            "homes/villa10.webp"
+        ]
     },
     {
         "id": 2,
-        "name": "Beachfront Condo",
-        "location": "Miami",
-        "price": 1000000,
-        "bedrooms": 2,
-        "bathrooms": 2,
-        "description": "Stunning beachfront condo with breathtaking ocean views.",
-        "image": ["homes/house1.jpg", "homes/house3.jpg", "homes/house3.jpg"]
+        "name": "Penthouse Suite",
+        "location": "New York City",
+        "price": 5200000,
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "description": "Experience the height of sophistication in this luxurious penthouse suite located in the heart of New York City. With its sleek and modern design, floor-to-ceiling windows, and panoramic city views, this penthouse offers an unparalleled urban living experience. Enjoy the finest amenities, impeccable service, and a prime location in the vibrant city center.",
+        "image": [
+            "homes/penthouse1.jpg",
+            "homes/penthouse2.jpg",
+            "homes/penthouse3.jpg",
+            "homes/penthouse4.jpg",
+            "homes/penthouse5.jpg",
+            "homes/penthouse6.jpg"
+        ]
     },
     {
         "id": 3,
-        "name": "Cozy Cottage",
-        "location": "New Yorm",
-        "price": 500000,
+        "name": "Seaside Cottage",
+        "location": "Cape Town",
+        "price": 1200000,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "description": "Escape to a quaint seaside cottage nestled along the picturesque coast of Cape Town. This charming property offers direct access to sandy beaches and mesmerizing ocean views. With its cozy interiors, coastal vibes, and proximity to local attractions, this cottage is an ideal retreat for beach lovers seeking a peaceful coastal getaway.",
+        "image": [
+            "homes/cottage1.jpg",
+            "homes/cottage2.jpg",
+            "homes/cottage3.jpg",
+            "homes/cottage4.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Mountain Chalet",
+        "location": "Swiss Alps",
+        "price": 3000000,
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "description": "Embrace the beauty of the Swiss Alps in this exquisite mountain chalet. Set amidst breathtaking landscapes, this luxurious property offers a perfect blend of alpine charm and modern amenities. With its spacious interiors, cozy fireplace, and panoramic mountain views, this chalet provides an enchanting retreat for ski enthusiasts and nature lovers.",
+        "image": [
+            "homes/chalet1.jpg",
+            "homes/chalet2.jpg",
+            "homes/chalet3.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Historic Mansion",
+        "location": "London",
+        "price": 5000000,
+        "bedrooms": 7,
+        "bathrooms": 6,
+        "description": "Step into the grandeur of a historic mansion located in the prestigious city of London. This magnificent property showcases exquisite architectural details, elegant interiors, and meticulously landscaped gardens. With its rich heritage, luxurious amenities, and proximity to renowned landmarks, this mansion offers a truly remarkable living experience.",
+        "image": [
+            "homes/mansion1.webp",
+            "homes/mansion2.webp",
+            "homes/mansion3.webp",
+            "homes/mansion4.webp",
+            "homes/mansion5.webp",
+            "homes/mansion6.webp",
+            "homes/mansion7.webp"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Tropical Retreat",
+        "location": "Bali",
+        "price": 1800000,
         "bedrooms": 3,
         "bathrooms": 2,
-        "description": "Charming cottage located in a peaceful area of New York.",
-        "image": ["homes/house1.jpg", "homes/house3.jpg", "homes/house3.jpg"]
+        "description": "Escape to a serene tropical retreat in the exotic island of Bali. Surrounded by lush greenery and tranquil landscapes, this stunning property offers a private oasis of relaxation. With its open-air design, private pool, and Balinese-inspired architecture, this retreat provides an idyllic sanctuary for rejuvenation.",
+        "image": [
+            "homes/retreat1.jpg",
+            "homes/retreat2.jpg",
+            "homes/retreat3.jpg"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Lakefront Cabin",
+        "location": "Lake Tahoe",
+        "price": 900000,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "description": "Indulge in the tranquility of lakeside living with this charming lakefront cabin on the shores of Lake Tahoe. Enjoy stunning sunset views, a private dock for boating and fishing, and a cozy interior that brings the beauty of nature indoors. Perfect for nature enthusiasts and outdoor lovers seeking a peaceful retreat.",
+        "image": [
+            "homes/cabin1.jpg",
+            "homes/cabin2.jpeg",
+            "homes/cabin3.jpeg"
+        ]
     }
 ]

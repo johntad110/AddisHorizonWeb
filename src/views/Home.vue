@@ -5,7 +5,7 @@
       <h1>Explore More Homes</h1>
     </div>
     <div class="cards">
-      <Card v-for="home in homes" :key="home.id"/>
+      <Card v-for="home in homes" :key="home.id" :home="home" @click="cardClicked(home.id)"/>
     </div>
   </section>
 
@@ -43,6 +43,7 @@ import Card from "@/components/Card.vue";
 import { ref } from "vue";
 
 import propertiesData from '../../data/db.json';
+import { useRouter } from 'vue-router';
 
 export default {
   name: "Home",
@@ -52,8 +53,13 @@ export default {
   },
   setup() {
     const homes = ref(propertiesData);
+    const router = useRouter()
 
-    return { homes };
+    function cardClicked(homeID) {
+      router.push(`/property-details/${homeID}`)
+    }
+
+    return { homes, cardClicked };
   },
 };
 </script>

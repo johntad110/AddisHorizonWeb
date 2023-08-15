@@ -78,7 +78,6 @@ export default {
     },
     navigateToDetails(homeID) {
       // Show details for that home
-      console.log("Going to Details Page for home: " + homeID);
       this.$router.push(`/property-details/${homeID}`)
     },
     scrollToExplore() {
@@ -106,6 +105,7 @@ html {
   height: 100vh;
   opacity: 1;
   transition: opacity 0.5s easeout;
+  z-index: 2;
 }
 
 .hero.fade-out {

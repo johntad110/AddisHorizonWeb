@@ -7,12 +7,12 @@
     @mouseout="hover = false"
   >
     <div class="image-container">
-      <img src="../assets/real-estate.webp" alt="" srcset="" />
+      <img :src="getImagePath(home.image[0])" alt="" srcset="" />
       <transition name="fade">
         <div class="gradient" v-if="hover">
           <div class="text-container">
-            <h3>{{ title }}</h3>
-            <p>{{ subtitle }}</p>
+            <h3>{{ home.name }}</h3>
+            <p>{{ home.location }}</p>
           </div>
         </div>
       </transition>
@@ -32,6 +32,7 @@
 import "@fortawesome/fontawesome-free/css/all.css";
 
 export default {
+  props: ['home'],
   data() {
     return {
       hover: false,
@@ -66,6 +67,9 @@ export default {
     moveCard(event) {
       this.mouseX = event.clientX;
       this.mouseY = event.clientY;
+    },
+    getImagePath(filename) {
+      return require(`@/assets/${filename}`);
     },
   },
 };

@@ -133,7 +133,7 @@ body {
 }
 
 .social-media .social-link:hover {
-  color: black;
+  color: #2c3e50;
 }
 
 .copy-right {
