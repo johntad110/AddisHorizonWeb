@@ -1,6 +1,6 @@
 <template>
   <nav class="header">
-    <div class="logo">
+    <div class="logo" @click="$router.push('/')">
       <img src="@/assets/addis-logo.png" alt="Addis Horizon" />
     </div>
     <div class="nav">
@@ -51,6 +51,10 @@ export default {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   color: gold;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .logo img {
