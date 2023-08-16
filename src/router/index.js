@@ -6,6 +6,7 @@ import PropertyListing from '../views/PropertyListing.vue'
 import PropertyDetails from '../views/PropertyDetails.vue'
 import Projects from '../views/Projects.vue'
 import PrivacyPolicy from '../views/PrivacyPolicy'
+import NotFound from '../views/NotFound'
 const routes = [
   {
     path: '/',
@@ -41,6 +42,11 @@ const routes = [
     path: '/privacy-policy',
     name: 'privacy-policy',
     component: PrivacyPolicy
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: 'not-found',
+    component: NotFound
   }
 ]
 
