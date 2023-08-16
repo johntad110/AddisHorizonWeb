@@ -12,8 +12,13 @@
   <div class="container">
     <div class="projects">
       <h2>Projects</h2>
-      <div class="project-image">
-        <img src="../assets/projects.jpg" alt="Projects" />
+      <div class="project-image" @click="$router.push('/projects')">
+        <button @click="$router.push('/projects')">Open</button>
+        <img src="../assets/project1.jpg" alt="Projects" />
+        <div class="project-gradient">
+          <h3>"Something Giong on in Our Project"</h3>
+          <p>"This is a Project Description"</p>
+        </div>
       </div>
     </div>
 
@@ -80,7 +85,7 @@ Hero {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 @media (min-width: 768px) {
@@ -105,11 +110,62 @@ Hero {
 .projects {
   flex-basis: 66.67%;
   margin: 20px;
+  overflow: hidden;
+}
+
+.project-image {
+  position: relative;
 }
 
 .project-image img {
   background-color: red;
   max-width: 100%;
+}
+
+.projects h2 {
+  font-size: 3em;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.project-image button {  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid wheat;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: wheat;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px 5px rgb(0, 157, 97, 0.5);
+}
+
+.project-image:hover button {
+  box-shadow: 0 0 30px 5px purple;
+  background-color: white;
+  color: rgb(0, 157, 97);
+  cursor: pointer;
+}
+
+.project-image:hover {
+  cursor: pointer;
+}
+
+.project-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgb(0, 157, 97), transparent);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  transition: opacity 0.3s;
+  color: white;
+  padding: 10px;
 }
 
 .news {
