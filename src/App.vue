@@ -27,7 +27,7 @@
       <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
     </div>
     <div class="copy-right">
-      &copy; 2023 Addis Horizen Realty Group. All rights reserved.
+      &copy; 2023 Yohannes Tadiwos. All rights reserved.
     </div>
   </footer>
 </template>
