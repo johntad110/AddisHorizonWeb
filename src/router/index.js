@@ -5,7 +5,7 @@ import About from '../views/About.vue'
 import PropertyListing from '../views/PropertyListing.vue'
 import PropertyDetails from '../views/PropertyDetails.vue'
 import Projects from '../views/Projects.vue'
-
+import PrivacyPolicy from '../views/PrivacyPolicy'
 const routes = [
   {
     path: '/',
@@ -36,6 +36,11 @@ const routes = [
     path: '/projects',
     name: 'projects',
     component: Projects
+  },
+  {
+    path: '/privacy-policy',
+    name: 'privacy-policy',
+    component: PrivacyPolicy
   }
 ]
 
