@@ -16,28 +16,31 @@
         <button @click="$router.push('/projects')">Open</button>
         <img src="../assets/project1.jpg" alt="Projects" />
         <div class="project-gradient">
-          <h3>"Something Giong on in Our Project"</h3>
-          <p>"This is a Project Description"</p>
+          <h3>"Skyview Apartments"</h3>
+          <p>"Skyview Apartments is a luxurious residential complex located in the heart of Addis Ababa"</p>
         </div>
       </div>
     </div>
 
     <div class="news">
       <h2>Latest News</h2>
-      <div class="news-item">
-        <h3>Bews Bitle 1</h3>
-        <p>News Content</p>
-      </div>
-      <div class="news-item">
-        <h3>Bews Bitle 1</h3>
-        <p>News Content</p>
+      <div class="news-item-snippet" v-for="news in newsData.slice(0, 2)" :key="news.id">
+        <h3>{{ news.title }}</h3>
+        <p>{{ getSnippet(news.content[0]) }}</p>
+        <router-link to="/news" class="read-more">Read More</router-link>
       </div>
     </div>
   </div>
 
   <div class="visit-us">
     <img src="../assets/office.jpg" alt="Office" />
-    <button class="visit-button">Visit us</button>
+    <button @click="toggleVisitUs" v-if="!showAddress" class="visit-button">Visit us</button>
+    <button @click="toggleVisitUs" v-if="showAddress" class="visit-button container">
+      <p>Kirkos, Addis Ababa, Ethiopia</p>
+      <p>Churchill Avenue</p>
+      <p>Postal Code: 1001</p>
+      <p>Phone number: +251-956-325-334</p>
+    </button>
   </div>
 
 </template>
@@ -50,6 +53,8 @@ import { ref } from "vue";
 import propertiesData from '../../data/db.json';
 import { useRouter } from 'vue-router';
 
+import jsonData from '../../data/news.json'
+
 export default {
   name: "Home",
   components: {
@@ -59,12 +64,37 @@ export default {
   setup() {
     const homes = ref(propertiesData);
     const router = useRouter()
+    const newsData = ref([])
+    const showAddress = ref(false)
 
     function cardClicked(homeID) {
       router.push(`/property-details/${homeID}`)
     }
 
-    return { homes, cardClicked };
+    // async function fetchNewsData() {
+    //   try {
+    //     const response = await fetch("../../data/news.json")
+    //     newsData.value = await response.json()
+    //   } catch (error) {
+    //     console.error("Failed to fetch news data: ", error);
+    //   }
+    // }
+
+    function fetchNewsData() {
+      newsData.value = jsonData
+    }
+
+    function getSnippet(content) {
+        return content.substring(0, 50) + "...";
+    }
+
+    function toggleVisitUs() {
+      showAddress.value = !showAddress.value
+    }
+
+    fetchNewsData()
+
+    return { homes, cardClicked, getSnippet, newsData, toggleVisitUs, showAddress };
   },
 };
 </script>
@@ -176,8 +206,13 @@ Hero {
   max-width: 300px;
 }
 
-.news-item {
+.news h2 {
   margin-bottom: 20px;
+}
+
+.news-item-snippet {
+  padding: 20px 0;
+  border-bottom: 1px solid;
 }
 
 @media (max-width: 768px) {
