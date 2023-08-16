@@ -17,7 +17,7 @@
       </div>
       <div class="small-nav-buttons">
         <button @click="goHome">Home</button>
-        <button>About</button>
+        <button @click="goAbout">About</button>
         <button>Properties</button>
       </div>
     </div>
@@ -37,6 +37,9 @@ export default {
     },
     goHome() {
       this.$router.push("/")
+    },
+    goAbout() {
+      this.$router.push("/about")
     }
   }
 };

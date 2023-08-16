@@ -13,7 +13,7 @@
     </div>
     <div class="bottom-right">
       <h3>Company</h3>
-      <p><a href="#">About</a></p>
+      <p><router-link to="/about">About</router-link></p>
       <p><a href="#">News</a></p>
       <p><a href="#">Privacy</a></p>
       <p><a href="#">Properties</a></p>
