@@ -4,9 +4,9 @@
       <img src="@/assets/addis-logo.png" alt="Addis Horizon" />
     </div>
     <div class="nav">
-      <button>Home</button>
-      <button>About</button>
-      <button class="properties">Properties</button>
+      <button @click="goHome">Home</button>
+      <button @click="goAbout">About</button>
+      <button class="properties" @click="$router.push('/property-listing')">Properties</button>
     </div>
     <div class="bar-icon" @click="toggleSideBar">
         <i class="fa-solid fa-bars"></i>
@@ -18,7 +18,7 @@
       <div class="small-nav-buttons">
         <button @click="goHome">Home</button>
         <button @click="goAbout">About</button>
-        <button>Properties</button>
+        <button @click="$router.push('/property-listing')">Properties</button>
       </div>
     </div>
   </nav>

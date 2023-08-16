@@ -16,7 +16,7 @@
       <p><router-link to="/about">About</router-link></p>
       <p><a href="#">News</a></p>
       <p><a href="#">Privacy</a></p>
-      <p><a href="#">Properties</a></p>
+      <p><router-link to="/property-listing">Properties</router-link></p>
     </div>
   </div>
 
